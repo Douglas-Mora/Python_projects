@@ -2,6 +2,7 @@
 *** SIMPLE PIG LATIN ***
 This is a project I resolved in codewars.com
 ---------------------------------------------
+
 Instructions:
 Move the first letter of each word to the end of it, then add "ay" to the end of the word.
 Leave punctuation marks untouched. Examples
@@ -13,7 +14,7 @@ Leave punctuation marks untouched. Examples
 # of every word was move to the end of the word, then adding "ay".
 # The resulting list was joined, separating entries with space " "".
 
-
+#Test for GitHub purposes...
 def pig_it(text):
     return " ".join([(f"{word[1:]}{word[0]}ay") if word.isalnum() else word for word in text.split(" ")])
 
